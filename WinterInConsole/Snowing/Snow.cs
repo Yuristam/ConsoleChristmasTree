@@ -14,14 +14,11 @@
         {
             for (int i = 0; i < 28; i++)
             {
-                for (int j = 0; j < 3; j++)
-                {
                     Console.SetCursorPosition(X, i);
-                    Console.WriteLine(Symbol);
-                    Task.Delay(100).Wait();
+                    Console.Write(Symbol);
+                    Task.Delay(300).Wait();
                     Console.SetCursorPosition(X, i);
-                    Console.WriteLine(' ');
-                }
+                    Console.Write(' ');
             }
         }
         public static void Snowing()
@@ -30,10 +27,11 @@
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             while (true)
             {
+                Random random = new Random();
+                Snow snow = new(random.Next(31, 80), '*');
+                
                 for (int i = 0; i < 10; i++)
                 {
-                    Random random = new Random();
-                    Snow snow = new(random.Next(31, 80), '*');
                     snow.DrawSnow();
                 }
             }
