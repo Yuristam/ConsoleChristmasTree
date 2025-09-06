@@ -1,6 +1,8 @@
-# WinterInConsole
+# Christmas Tree in Console C#
 
-## Just For Fun
+## #Just For Fun
+
+> This project was created just for fun *(it does nothing useful 🤪)*. 
 
 ![image](https://user-images.githubusercontent.com/109821350/229302248-61fbfe40-4de9-4fe8-b9c6-876d411fb831.png)
 
